@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="53346" started-at="2020-06-05T00:20:17 IST" finished-at="2020-06-05T00:21:10 IST">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.CarWaleRunner@7a1ebcd8]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Default test" duration-ms="53346" started-at="2020-06-05T00:20:17 IST" finished-at="2020-06-05T00:21:10 IST">
+      <class name="runner.CarWaleRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.CarWaleRunner@7a1ebcd8]" name="setUpClass" is-config="true" duration-ms="170" started-at="2020-06-05T00:20:17 IST" finished-at="2020-06-05T00:20:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.CarWaleRunner@7a1ebcd8]" name="runScenario" duration-ms="52952" started-at="2020-06-05T00:20:17 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-06-05T00:21:10 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["To Find Car with less KM usage"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["CarWale"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <span class="shortlist-icon--inactive shortlist"></span> is not clickable at point (767, 10). Other element would receive the click: <nav id="cw-top-navigation-wrapper">...</nav>
+  (Session info: chrome=83.0.4103.97)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'VIN-PC', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\vinvi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:31243}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss, webauthn:virtualAuthenticators: true}
+Session ID: 82e77c5a47d849949714c65f3d8cb961]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="shortlist-icon--inactive shortlist"></span> is not clickable at point (767, 10). Other element would receive the click: <nav id="cw-top-navigation-wrapper">...</nav>
+  (Session info: chrome=83.0.4103.97)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'VIN-PC', ip: '192.168.1.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\vinvi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:31243}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss, webauthn:virtualAuthenticators: true}
+Session ID: 82e77c5a47d849949714c65f3d8cb961
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at steps.CarWaleSteps.validateSorting(CarWaleSteps.java:171)
+at ✽.User validates the Cars listed with KM Low to High and adds the least KM run car to Wishlist(file:src/test/java/features/CarWale.feature:16)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.CarWaleRunner@7a1ebcd8]" name="tearDownClass" is-config="true" duration-ms="0" started-at="2020-06-05T00:21:10 IST" finished-at="2020-06-05T00:21:10 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.CarWaleRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
