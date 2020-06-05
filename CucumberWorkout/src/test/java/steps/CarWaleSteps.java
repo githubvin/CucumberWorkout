@@ -30,6 +30,7 @@ public class CarWaleSteps {
 
 	public RemoteWebDriver driver; 
 	
+	public JavascriptExecutor js;
 	
 	
 	@Given("User opens the Chrome browser")
@@ -98,7 +99,7 @@ public class CarWaleSteps {
 
 	@And("User selects Manufacturer as Hyundai and car as Creta")
 	public void selectCar() throws InterruptedException {
-		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0, 250)");
 		driver.findElementByXPath("//span[@class='filterText' and contains(text(),'Hyundai')]").click(); 
 		Thread.sleep(2000); 
@@ -108,7 +109,7 @@ public class CarWaleSteps {
 
 	@And("User selects Fuel type as Petrol")
 	public void selectFuelType() throws InterruptedException {
-		JavascriptExecutor js = (JavascriptExecutor) driver;
+
 		js.executeScript("window.scrollBy(0, 400)");
 		driver.findElementByXPath("//h3[contains(text(),'Fuel Type')]").click();
 		Thread.sleep(2000);
@@ -164,7 +165,6 @@ public class CarWaleSteps {
 		// Selecting the lowest KMs car  
 		Thread.sleep(3000); 
 
-		JavascriptExecutor js = (JavascriptExecutor) driver;
 		WebElement favCar = driver.findElementByXPath("(//span[contains(text(),'"+str+"')]//ancestor::div[@class='stock-detail']//span[@class='shortlist-icon--inactive shortlist'])[1]");
 		//js.executeScript("window.scrollBy(0, 500)");
 		//js.executeScript("window.scrollIntoView(true)", favCar);  
