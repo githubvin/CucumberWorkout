@@ -16,6 +16,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.Select;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -41,14 +42,14 @@ public class TrivagoSteps {
 	    driver = new ChromeDriver(options);
 	}
 
-	@Given("User loads the application Url")
+	@And("User loads the application Url")
 	public void loadApplication() {
 	    driver.get("https://www.trivago.com/");
 	    driver.manage().window().maximize();
 	    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS); 
 	}
 
-	@Given("User types Agra as destination")
+	@And("User types Agra as destination")
 	public void typeDestination() throws InterruptedException { 
 		js = (JavascriptExecutor) driver; 
 		js.executeScript("window.scrollBy(0,600)");
@@ -59,7 +60,7 @@ public class TrivagoSteps {
 	    act.click(driver.findElementByXPath("//span[text()='City - Uttar Pradesh, India']")).build().perform();
 	}
 
-	@Given("User selects the checkin date as June 15 and checkout date as June 30")
+	@And("User selects the checkin date as June 15 and checkout date as June 30")
 	public void selectCheckinCheckoutDate() throws InterruptedException { 
 		Thread.sleep(2000); 
 		act.click(driver.findElementByXPath("//time//span[text()='15']")).build().perform();
@@ -70,13 +71,13 @@ public class TrivagoSteps {
 	    
 	}
 
-	@Given("User selects Family Room")
+	@And("User selects Family Room")
 	public void selectRoomType() throws InterruptedException {
 		act.click(driver.findElementByXPath("//span[text()='Family rooms']")).build().perform();
 	    Thread.sleep(2000);
 	}
 
-	@Given("User selects Adults Children numbers and Age")
+	@And("User selects Adults Children numbers and Age")
 	public void selectAdultChildrenAge() {
 	    WebElement adultElement = driver.findElementById("select-num-adults-2"); 
 	    Select adultOptions = new Select(adultElement); 
@@ -91,13 +92,13 @@ public class TrivagoSteps {
 	    childAgeOptions.selectByValue("4");
 	}
 
-	@Given("User clicks confirm button and click search")
+	@And("User clicks confirm button and click search")
 	public void clickConfirmSearch() throws InterruptedException {
 		driver.findElementByXPath("//span[text()='Confirm']").click(); 
 		Thread.sleep(3000);
 	}
 
-	@Given("User selects Accommodation type as Hotels and choose 4 stars")
+	@And("User selects Accommodation type as Hotels and choose 4 stars")
 	public void selectAccommodationHotel() throws InterruptedException {
 	    act.moveToElement(driver.findElementByXPath("//li[@data-qa='stars-filter']")).build().perform(); 
 	    Thread.sleep(2000);
@@ -108,14 +109,14 @@ public class TrivagoSteps {
 	    Thread.sleep(3000);
 	}
 
-	@Given("User selects Guest rating as Very Good")
+	@And("User selects Guest rating as Very Good")
 	public void selectGuestRating() throws InterruptedException {
 	    act.moveToElement(driver.findElementByXPath("//li[@data-qa='rating-filter']")).build().perform(); 
 	    act.click(driver.findElementByXPath("//span[text()='Very good']")).build().perform(); 
 	    Thread.sleep(3000);
 	}
 
-	@Given("User sets Hotel Location as Agra Fort and click Done")
+	@And("User sets Hotel Location as Agra Fort and click Done")
 	public void selectHotelLocation() throws InterruptedException {
 	    act.moveToElement(driver.findElementByXPath("//li[@data-qa='location-filter']")).build().perform(); 
 	    
@@ -127,7 +128,7 @@ public class TrivagoSteps {
 	    Thread.sleep(3000);
 	}
 
-	@Given("User selects Air Conditioning, Restaurant and WiFi in Filters and click Done")
+	@And("User selects Air Conditioning, Restaurant and WiFi in Filters and click Done")
 	public void applyMoreFilters() throws InterruptedException {
 	    act.moveToElement(driver.findElementByXPath("//li[@data-qa='more-filter']")).build().perform(); 
 	    act.click(driver.findElementByXPath("//label[text()='Air conditioning']")).build().perform(); 
@@ -137,7 +138,7 @@ public class TrivagoSteps {
 	    Thread.sleep(3000);
 	}
 
-	@Given("User sorts result as Rating and Recommended")
+	@And("User sorts result as Rating and Recommended")
 	public void sortResults() throws InterruptedException {
 	    WebElement sortElement = driver.findElementById("mf-select-sortby"); 
 	    Select sortOptions = new Select(sortElement); 
@@ -145,7 +146,7 @@ public class TrivagoSteps {
 	    Thread.sleep(4000);
 	}
 
-	@Given("User prints the Hotel name, Rating, Number of Reviews and Clicks View Deal")
+	@And("User prints the Hotel name, Rating, Number of Reviews and Clicks View Deal")
 	public void printFirstHotelDetailsAndClick() throws InterruptedException {
 	    String hotelName = driver.findElementByXPath("(//span[@data-qa='item-name'])[1]").getText(); 
 	    System.out.println("Hotel Name: " + hotelName); 
@@ -160,7 +161,7 @@ public class TrivagoSteps {
 	    Thread.sleep(3000);
 	}
 
-	@Given("User prints the URL of the page")
+	@And("User prints the URL of the page")
 	public void printHotelDetailUrl() throws InterruptedException {
 	    Set<String> winSet = driver.getWindowHandles(); 
 	    List<String> winList = new ArrayList<String>(winSet); 
