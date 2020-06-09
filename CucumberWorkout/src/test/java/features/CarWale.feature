@@ -1,4 +1,4 @@
-Feature: CarWale 
+Feature: CarWale Workflow
 
 Scenario: To Find Car with less KM usage 
 

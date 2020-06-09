@@ -2,39 +2,39 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="53665" started-at="2020-06-05T12:06:44 IST" finished-at="2020-06-05T12:07:38 IST">
+  <suite name="Default suite" duration-ms="103031" started-at="2020-06-09T16:08:37 IST" finished-at="2020-06-09T16:10:20 IST">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.CarWaleRunner@7a1ebcd8]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TrivagoRunner@7a1ebcd8]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="53665" started-at="2020-06-05T12:06:44 IST" finished-at="2020-06-05T12:07:38 IST">
-      <class name="runner.CarWaleRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.CarWaleRunner@7a1ebcd8]" name="setUpClass" is-config="true" duration-ms="151" started-at="2020-06-05T12:06:44 IST" finished-at="2020-06-05T12:06:44 IST">
+    <test name="Default test" duration-ms="103031" started-at="2020-06-09T16:08:37 IST" finished-at="2020-06-09T16:10:20 IST">
+      <class name="runner.TrivagoRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.TrivagoRunner@7a1ebcd8]" name="setUpClass" is-config="true" duration-ms="138" started-at="2020-06-09T16:08:37 IST" finished-at="2020-06-09T16:08:37 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.CarWaleRunner@7a1ebcd8]" name="runScenario" duration-ms="53401" started-at="2020-06-05T12:06:44 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-06-05T12:07:37 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.TrivagoRunner@7a1ebcd8]" name="runScenario" duration-ms="102400" started-at="2020-06-09T16:08:37 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-06-09T16:10:20 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA["To Find Car with less KM usage"]]>
+                <![CDATA["To book a Hotel in Agra good Recommendation and Rating 4"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["CarWale"]]>
+                <![CDATA["Trivago Workflow"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.CarWaleRunner@7a1ebcd8]" name="tearDownClass" is-config="true" duration-ms="9" started-at="2020-06-05T12:07:38 IST" finished-at="2020-06-05T12:07:38 IST">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.TrivagoRunner@7a1ebcd8]" name="tearDownClass" is-config="true" duration-ms="347" started-at="2020-06-09T16:10:20 IST" finished-at="2020-06-09T16:10:20 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- runner.CarWaleRunner -->
+      </class> <!-- runner.TrivagoRunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
