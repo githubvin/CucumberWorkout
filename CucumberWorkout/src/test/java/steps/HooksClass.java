@@ -12,7 +12,7 @@ import io.cucumber.java.Before;
 
 public class HooksClass { 
 	
-	public static RemoteWebDriver driver; 
+	private static RemoteWebDriver driver; 
 	
 	@Before
 	public void launchApplication() { 
@@ -32,6 +32,10 @@ public class HooksClass {
 	@After 
 	public void closeApplication() { 
 		driver.quit();
+	} 
+	
+	public RemoteWebDriver getDriver() {
+		return driver; 
 	}
 
 }
