@@ -15,7 +15,7 @@ public class HooksClass {
 	private static RemoteWebDriver driver; 
 	
 	@Before
-	public void launchApplication() { 
+	public void setUp() { 
 		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe"); 
 	    System.setProperty("webdriver.chrome.silentOutput", "true"); 
 	    
@@ -30,11 +30,11 @@ public class HooksClass {
 	} 
 	
 	@After 
-	public void closeApplication() { 
+	public void tearDown() { 
 		driver.quit();
 	} 
 	
-	public RemoteWebDriver getDriver() {
+	public static RemoteWebDriver getDriver() {
 		return driver; 
 	}
 

@@ -1,5 +1,13 @@
 package steps;
 
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.RemoteWebDriver;
+
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -11,7 +19,9 @@ public class BigBasketExamplesSteps {
 	Actions act; 
 	JavascriptExecutor js; 
 	
-	
+	public BigBasketExamplesSteps() {
+		this.driver = HooksClass.getDriver(); 
+	}
 	
 	@Given("User goes to BigBasket application")
 	public void launchBigBasket() {
@@ -92,14 +102,14 @@ public class BigBasketExamplesSteps {
 		}
 	}
 
-	@And("clicks on Change Address")
+	@And("User clicks on Change Address")
 	public void clickChangeAddress() {
 		js = (JavascriptExecutor) driver; 
 		js.executeScript("window.scrollBy(0,-100)"); 
 		driver.findElementByXPath("//span[contains(@ng-bind, 'address_display_name')]").click();
 	}
 
-	@And("User selects (.*) as City, selects (.*) and click Continue")
+	@And("User selects City as (.*), types (.*) and selects the area and click Continue")
 	public void selectArea(String city, String area) throws InterruptedException {
 		driver.findElementByXPath("(//span[text()='Select your city']/parent::span)[1]").click(); 
 	    driver.findElementByXPath("//input[@placeholder='Select your city']").sendKeys(city); 
