@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="3" ignored="0" total="3" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="68923" started-at="2020-06-17T12:45:21 IST" finished-at="2020-06-17T12:46:29 IST">
+  <suite name="Default suite" duration-ms="416440" started-at="2020-06-18T10:35:31 IST" finished-at="2020-06-18T10:42:28 IST">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.BigBasketExamplesRunner@7a1ebcd8]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="68923" started-at="2020-06-17T12:45:21 IST" finished-at="2020-06-17T12:46:29 IST">
+    <test name="Default test" duration-ms="416440" started-at="2020-06-18T10:35:31 IST" finished-at="2020-06-18T10:42:28 IST">
       <class name="runner.BigBasketExamplesRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.BigBasketExamplesRunner@7a1ebcd8]" name="setUpClass" is-config="true" duration-ms="209" started-at="2020-06-17T12:45:21 IST" finished-at="2020-06-17T12:45:21 IST">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.BigBasketExamplesRunner@7a1ebcd8]" name="setUpClass" is-config="true" duration-ms="188" started-at="2020-06-18T10:35:31 IST" finished-at="2020-06-18T10:35:31 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.BigBasketExamplesRunner@7a1ebcd8]" name="runScenario" duration-ms="23334" started-at="2020-06-17T12:45:21 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-06-17T12:45:44 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.BigBasketExamplesRunner@7a1ebcd8]" name="runScenario" duration-ms="130085" started-at="2020-06-18T10:35:31 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-06-18T10:37:42 IST">
           <params>
             <param index="0">
               <value>
@@ -27,45 +27,10 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.JavascriptException">
-            <message>
-              <![CDATA[javascript error: Failed to execute 'elementsFromPoint' on 'Document': The provided double value is non-finite.
-  (Session info: chrome=83.0.4103.97)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'JMCHD2220', ip: '192.168.60.211', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\USER~1.JMC\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:64991}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss, webauthn:virtualAuthenticators: true}
-Session ID: 231b86807fe888a49719d7c9bb90470a]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.JavascriptException: javascript error: Failed to execute 'elementsFromPoint' on 'Document': The provided double value is non-finite.
-  (Session info: chrome=83.0.4103.97)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'JMCHD2220', ip: '192.168.60.211', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\USER~1.JMC\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:64991}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss, webauthn:virtualAuthenticators: true}
-Session ID: 231b86807fe888a49719d7c9bb90470a
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
-at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
-at steps.BigBasketExamplesSteps.navigateBeveragesFruitJuices(BigBasketExamplesSteps.java:38)
-at ✽.User goes to Beverages and Fruit juices & Drinks(file:src/test/java/features/BigBasketExamples.feature:5)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.JavascriptException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.BigBasketExamplesRunner@7a1ebcd8]" name="runScenario" duration-ms="20906" started-at="2020-06-17T12:45:44 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-06-17T12:46:05 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.BigBasketExamplesRunner@7a1ebcd8]" name="runScenario" duration-ms="138671" started-at="2020-06-18T10:37:42 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-06-18T10:40:00 IST">
           <params>
             <param index="0">
               <value>
@@ -78,45 +43,10 @@ at ✽.User goes to Beverages and Fruit juices & Drinks(file:src/test/java/featu
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.JavascriptException">
-            <message>
-              <![CDATA[javascript error: Failed to execute 'elementsFromPoint' on 'Document': The provided double value is non-finite.
-  (Session info: chrome=83.0.4103.97)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'JMCHD2220', ip: '192.168.60.211', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\USER~1.JMC\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:65039}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss, webauthn:virtualAuthenticators: true}
-Session ID: 347cfa184b521ab522b5f68b8cc805d6]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.JavascriptException: javascript error: Failed to execute 'elementsFromPoint' on 'Document': The provided double value is non-finite.
-  (Session info: chrome=83.0.4103.97)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'JMCHD2220', ip: '192.168.60.211', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\USER~1.JMC\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:65039}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss, webauthn:virtualAuthenticators: true}
-Session ID: 347cfa184b521ab522b5f68b8cc805d6
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
-at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
-at steps.BigBasketExamplesSteps.navigateBeveragesFruitJuices(BigBasketExamplesSteps.java:38)
-at ✽.User goes to Beverages and Fruit juices & Drinks(file:src/test/java/features/BigBasketExamples.feature:5)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.JavascriptException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.BigBasketExamplesRunner@7a1ebcd8]" name="runScenario" duration-ms="24322" started-at="2020-06-17T12:46:05 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-06-17T12:46:29 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.BigBasketExamplesRunner@7a1ebcd8]" name="runScenario" duration-ms="147387" started-at="2020-06-18T10:40:00 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-06-18T10:42:28 IST">
           <params>
             <param index="0">
               <value>
@@ -129,45 +59,10 @@ at ✽.User goes to Beverages and Fruit juices & Drinks(file:src/test/java/featu
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.JavascriptException">
-            <message>
-              <![CDATA[javascript error: Failed to execute 'elementsFromPoint' on 'Document': The provided double value is non-finite.
-  (Session info: chrome=83.0.4103.97)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'JMCHD2220', ip: '192.168.60.211', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\USER~1.JMC\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:65086}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss, webauthn:virtualAuthenticators: true}
-Session ID: ea1d163e0f2e24641b6a4988f74b7863]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.JavascriptException: javascript error: Failed to execute 'elementsFromPoint' on 'Document': The provided double value is non-finite.
-  (Session info: chrome=83.0.4103.97)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'JMCHD2220', ip: '192.168.60.211', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\USER~1.JMC\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:65086}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss, webauthn:virtualAuthenticators: true}
-Session ID: ea1d163e0f2e24641b6a4988f74b7863
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
-at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
-at steps.BigBasketExamplesSteps.navigateBeveragesFruitJuices(BigBasketExamplesSteps.java:38)
-at ✽.User goes to Beverages and Fruit juices & Drinks(file:src/test/java/features/BigBasketExamples.feature:5)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.JavascriptException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.BigBasketExamplesRunner@7a1ebcd8]" name="tearDownClass" is-config="true" duration-ms="5" started-at="2020-06-17T12:46:29 IST" finished-at="2020-06-17T12:46:29 IST">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.BigBasketExamplesRunner@7a1ebcd8]" name="tearDownClass" is-config="true" duration-ms="0" started-at="2020-06-18T10:42:28 IST" finished-at="2020-06-18T10:42:28 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

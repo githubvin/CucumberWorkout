@@ -35,8 +35,8 @@ public class BigBasketExamplesSteps {
 		act = new Actions(driver);
 		act.moveToElement(driver.findElementByXPath("//a[contains(text(),'Shop by')]")).build().perform(); 
 		Thread.sleep(2000);
-		act.moveToElement(driver.findElementByXPath("//a[contains(text(),'Beverages')]")).build().perform(); 
-		act.click(driver.findElementByXPath("//a[contains(text(),'Fruit Juices & Drinks')]")).build().perform();
+		act.moveToElement(driver.findElementByXPath("(//a[text()='Beverages'])[2]")).build().perform(); 
+		act.click(driver.findElementByXPath("(//a[contains(text(),'Fruit Juices & Drinks')])[2]")).build().perform();
 		Thread.sleep(3000);
 	   
 	}
@@ -91,15 +91,19 @@ public class BigBasketExamplesSteps {
 	}
 
 	@And("User adds the First listed available product")
-	public void addFirstProduct() {
+	public void addFirstProduct() throws InterruptedException {
 	    driver.findElementByXPath("(//button[@qa='add'])[1]").click(); 
+	    
+	    driver.findElementByXPath("(//a[text()='Continue'])[1]").click();
+	    Thread.sleep(2000);
 	    try {
 			driver.findElementByClassName("toast-close-button").click();
 			System.out.println("Success message closed.");
 		} catch (Exception e) {
 			System.out.println("Top success message not closed.");
-			e.printStackTrace();
-		}
+			//e.printStackTrace();
+		} 
+	    
 	}
 
 	@And("User clicks on Change Address")
