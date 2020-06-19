@@ -5,7 +5,7 @@ import io.cucumber.testng.CucumberOptions;
 import io.cucumber.testng.CucumberOptions.SnippetType;
 
 @CucumberOptions(features = "src/test/java/features/JustDial.feature", glue = "steps", monochrome = true, 
-dryRun = true, snippets = SnippetType.CAMELCASE)
+snippets = SnippetType.CAMELCASE)
 public class JustDialRunner extends AbstractTestNGCucumberTests {
 
 }
