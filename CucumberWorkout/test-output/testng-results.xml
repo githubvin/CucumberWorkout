@@ -1,75 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="92156" started-at="2020-06-23T19:29:45 IST" finished-at="2020-06-23T19:31:17 IST">
+  <suite name="Default suite" duration-ms="56566" started-at="2020-06-24T14:15:23 IST" finished-at="2020-06-24T14:16:19 IST">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.ZalandoRunner@7a1ebcd8]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.BikeWaleRunner@7a1ebcd8]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="92156" started-at="2020-06-23T19:29:45 IST" finished-at="2020-06-23T19:31:17 IST">
-      <class name="runner.ZalandoRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.ZalandoRunner@7a1ebcd8]" name="setUpClass" is-config="true" duration-ms="179" started-at="2020-06-23T19:29:45 IST" finished-at="2020-06-23T19:29:45 IST">
+    <test name="Default test" duration-ms="56566" started-at="2020-06-24T14:15:23 IST" finished-at="2020-06-24T14:16:19 IST">
+      <class name="runner.BikeWaleRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.BikeWaleRunner@7a1ebcd8]" name="setUpClass" is-config="true" duration-ms="140" started-at="2020-06-24T14:15:23 IST" finished-at="2020-06-24T14:15:23 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.ZalandoRunner@7a1ebcd8]" name="runScenario" duration-ms="91823" started-at="2020-06-23T19:29:45 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-06-23T19:31:17 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.BikeWaleRunner@7a1ebcd8]" name="runScenario" duration-ms="55744" started-at="2020-06-24T14:15:23 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-06-24T14:16:19 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA["To check the shopping in Zalando website and chatbot experience"]]>
+                <![CDATA["To compare the bikes and find the maximum rating from them"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Zalando website workflow"]]>
+                <![CDATA["BikeWale Workflow"]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoAlertPresentException">
-            <message>
-              <![CDATA[no such alert
-  (Session info: chrome=83.0.4103.106)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'VIN-PC', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\vinvi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:17293}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss, webauthn:virtualAuthenticators: true}
-Session ID: 0c7e3c8c50c424532cf14e21a46ee576]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoAlertPresentException: no such alert
-  (Session info: chrome=83.0.4103.106)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'VIN-PC', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.106, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\vinvi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:17293}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss, webauthn:virtualAuthenticators: true}
-Session ID: 0c7e3c8c50c424532cf14e21a46ee576
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:932)
-at steps.ZalandoSteps.printAlertText(ZalandoSteps.java:40)
-at ✽.User gets the Alert text and print it(file:src/test/java/features/Zalando.feature:6)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoAlertPresentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.ZalandoRunner@7a1ebcd8]" name="tearDownClass" is-config="true" duration-ms="0" started-at="2020-06-23T19:31:17 IST" finished-at="2020-06-23T19:31:17 IST">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.BikeWaleRunner@7a1ebcd8]" name="tearDownClass" is-config="true" duration-ms="8" started-at="2020-06-24T14:16:19 IST" finished-at="2020-06-24T14:16:19 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- runner.ZalandoRunner -->
+      </class> <!-- runner.BikeWaleRunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

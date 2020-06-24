@@ -36,7 +36,7 @@ public class ZalandoSteps {
 
 	@And("User gets the Alert text and print it")
 	public void printAlertText() throws InterruptedException { 
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		String initialAlertText = driver.switchTo().alert().getText(); 
 		System.out.println("Initial Alert: " + initialAlertText); 
 	}
