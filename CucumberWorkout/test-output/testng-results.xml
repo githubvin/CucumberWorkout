@@ -2,39 +2,39 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="56566" started-at="2020-06-24T14:15:23 IST" finished-at="2020-06-24T14:16:19 IST">
+  <suite name="Default suite" duration-ms="76465" started-at="2020-06-24T22:50:23 IST" finished-at="2020-06-24T22:51:39 IST">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.BikeWaleRunner@7a1ebcd8]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.LenskartRunner@7a1ebcd8]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="56566" started-at="2020-06-24T14:15:23 IST" finished-at="2020-06-24T14:16:19 IST">
-      <class name="runner.BikeWaleRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.BikeWaleRunner@7a1ebcd8]" name="setUpClass" is-config="true" duration-ms="140" started-at="2020-06-24T14:15:23 IST" finished-at="2020-06-24T14:15:23 IST">
+    <test name="Default test" duration-ms="76465" started-at="2020-06-24T22:50:23 IST" finished-at="2020-06-24T22:51:39 IST">
+      <class name="runner.LenskartRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.LenskartRunner@7a1ebcd8]" name="setUpClass" is-config="true" duration-ms="151" started-at="2020-06-24T22:50:23 IST" finished-at="2020-06-24T22:50:23 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.BikeWaleRunner@7a1ebcd8]" name="runScenario" duration-ms="55744" started-at="2020-06-24T14:15:23 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-06-24T14:16:19 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.LenskartRunner@7a1ebcd8]" name="runScenario" duration-ms="76218" started-at="2020-06-24T22:50:23 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-06-24T22:51:39 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA["To compare the bikes and find the maximum rating from them"]]>
+                <![CDATA["To check the price of a particular brand in Lenskart website"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["BikeWale Workflow"]]>
+                <![CDATA["Lenskart Workflow"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.BikeWaleRunner@7a1ebcd8]" name="tearDownClass" is-config="true" duration-ms="8" started-at="2020-06-24T14:16:19 IST" finished-at="2020-06-24T14:16:19 IST">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.LenskartRunner@7a1ebcd8]" name="tearDownClass" is-config="true" duration-ms="4" started-at="2020-06-24T22:51:39 IST" finished-at="2020-06-24T22:51:39 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- runner.BikeWaleRunner -->
+      </class> <!-- runner.LenskartRunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
