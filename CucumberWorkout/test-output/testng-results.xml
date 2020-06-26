@@ -2,39 +2,39 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="76465" started-at="2020-06-24T22:50:23 IST" finished-at="2020-06-24T22:51:39 IST">
+  <suite name="Default suite" duration-ms="67913" started-at="2020-06-27T00:35:59 IST" finished-at="2020-06-27T00:37:07 IST">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.LenskartRunner@7a1ebcd8]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.NaukriRunner@7a1ebcd8]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="76465" started-at="2020-06-24T22:50:23 IST" finished-at="2020-06-24T22:51:39 IST">
-      <class name="runner.LenskartRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.LenskartRunner@7a1ebcd8]" name="setUpClass" is-config="true" duration-ms="151" started-at="2020-06-24T22:50:23 IST" finished-at="2020-06-24T22:50:23 IST">
+    <test name="Default test" duration-ms="67913" started-at="2020-06-27T00:35:59 IST" finished-at="2020-06-27T00:37:07 IST">
+      <class name="runner.NaukriRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.NaukriRunner@7a1ebcd8]" name="setUpClass" is-config="true" duration-ms="185" started-at="2020-06-27T00:35:59 IST" finished-at="2020-06-27T00:35:59 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.LenskartRunner@7a1ebcd8]" name="runScenario" duration-ms="76218" started-at="2020-06-24T22:50:23 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-06-24T22:51:39 IST">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runner.NaukriRunner@7a1ebcd8]" name="runScenario" duration-ms="67434" started-at="2020-06-27T00:35:59 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-06-27T00:37:07 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA["To check the price of a particular brand in Lenskart website"]]>
+                <![CDATA["To retrieve the company name from the popup coming when launching Naukri website"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Lenskart Workflow"]]>
+                <![CDATA["Naukri website exercise"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.LenskartRunner@7a1ebcd8]" name="tearDownClass" is-config="true" duration-ms="4" started-at="2020-06-24T22:51:39 IST" finished-at="2020-06-24T22:51:39 IST">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.NaukriRunner@7a1ebcd8]" name="tearDownClass" is-config="true" duration-ms="4" started-at="2020-06-27T00:37:07 IST" finished-at="2020-06-27T00:37:07 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- runner.LenskartRunner -->
+      </class> <!-- runner.NaukriRunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
